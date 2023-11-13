@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\fmell\\OneDrive\\Centenial Progress\\FALL 23\\Programing 3\\LAB3\\Bill\\Lab3Fmellado\\LoginUserControl\\LoginUserControl.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fmell\\OneDrive\\Centenial Progress\\FALL 23\\Programing 3\\LAB3\\Bill\\Lab3Fmellado\\LoginUserControl\\LoginUserControl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fmell\\OneDrive\\Centenial Progress\\FALL 23\\Programing 3\\LAB3\\Bill\\Lab3Fmellado\\LoginUserControl\\LoginUserControl.csproj",
+        "projectName": "LoginUserControl",
+        "projectPath": "C:\\Users\\fmell\\OneDrive\\Centenial Progress\\FALL 23\\Programing 3\\LAB3\\Bill\\Lab3Fmellado\\LoginUserControl\\LoginUserControl.csproj",
+        "packagesPath": "C:\\Users\\fmell\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmell\\OneDrive\\Centenial Progress\\FALL 23\\Programing 3\\LAB3\\Bill\\Lab3Fmellado\\LoginUserControl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fmell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://gallery.uipath.com/api/v2": {},
+          "https://www.myget.org/F/workflow": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

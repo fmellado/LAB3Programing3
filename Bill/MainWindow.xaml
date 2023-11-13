@@ -1,0 +1,50 @@
+﻿<Window x:Class="Bill.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bill"
+        mc:Ignorable="d"
+        Title="Francisco Mellado" Height="450" Width="600">
+    <DockPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="14*"/>
+                <ColumnDefinition Width="409*"/>
+                <ColumnDefinition Width="177*"/>
+            </Grid.ColumnDefinitions>
+            <!-- Your ComboBoxes for menu categories -->
+            <ComboBox x:Name="cmbBeverage" DisplayMemberPath="Item" SelectedValuePath="Price" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="17,10,0,0" Grid.Column="1"/>
+            <ComboBox x:Name="cmbAppetizer" DisplayMemberPath="Item" SelectedValuePath="Price" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="120,10,0,0" Grid.Column="1"/>
+            <ComboBox x:Name="cmbMainCourse" DisplayMemberPath="Item" SelectedValuePath="Price" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="230,10,0,0" Grid.Column="1"/>
+            <ComboBox x:Name="cmbDessert" DisplayMemberPath="Item"  SelectedValuePath="Price" SelectionChanged="ComboBox_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="340,10,0,0" Grid.Column="1"/>
+
+            <!-- DataGrid to display selected items -->
+            <DataGrid x:Name="dgBill" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,50,0,0" AutoGenerateColumns="False" Grid.Column="1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Item" Binding="{Binding Item}" Width="200"/>
+                    <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="100"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Total fields -->
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="22,0,0,41" Grid.Column="1">Subtotal:</TextBlock>
+            <TextBlock x:Name="txtSubtotal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="98,0,0,40" Grid.Column="1" />
+
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="22,0,0,28" Grid.Column="1">Tax:</TextBlock>
+            <TextBlock x:Name="txtTax" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="98,0,0,28" Grid.Column="1" />
+
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="22,0,0,10" Grid.Column="1">Total:</TextBlock>
+            <TextBlock x:Name="txtTotal" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="98,0,0,10" Grid.Column="1" />
+
+            <!-- Clear Bill Button -->
+            <Button Content="Clear Bill" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="186,0,0,10" Click="ClearBill_Click" Grid.Column="1"/>
+
+            <StatusBar DockPanel.Dock="Bottom" Grid.ColumnSpan="2" Margin="0,0,399,0">
+                <StatusBarItem HorizontalAlignment="Left" VerticalAlignment="Center" VerticalContentAlignment="Top" FlowDirection="RightToLeft" UseLayoutRounding="False">
+                    <Image x:Name="imgLogo" Source="C:\Users\fmell\OneDrive\Centenial Progress\FALL 23\Programing 3\LAB3\Bill\Lab3Fmellado\Bill\png.png" Width="24" Height="26" MouseLeftButtonDown="ImgLogo_MouseLeftButtonDown" IsHitTestVisible="True" />
+                </StatusBarItem>
+            </StatusBar>
+        </Grid>
+    </DockPanel>
+</Window>
